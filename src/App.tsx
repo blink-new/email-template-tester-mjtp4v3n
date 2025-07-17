@@ -20,7 +20,8 @@ import {
 import CodeEditor from './components/CodeEditor'
 import EmailPreview from './components/EmailPreview'
 import TemplateLibrary from './components/TemplateLibrary'
-import { toast } from 'react-hot-toast'
+import { toast } from 'sonner'
+import { Toaster } from './components/ui/sonner'
 
 const emailClients = [
   { id: 'gmail', name: 'Gmail', icon: Mail, color: 'bg-red-500' },
@@ -139,6 +140,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background">
+      <Toaster />
       {/* Header */}
       <header className="border-b bg-card">
         <div className="flex h-16 items-center justify-between px-6">
